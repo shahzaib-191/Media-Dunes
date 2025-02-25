@@ -1,0 +1,153 @@
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Blog Layout */
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 3;
+    min-width: 60%;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.divider {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.blog-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    min-width: 30%;
+    max-width: 300px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.search-icon {
+    color: gray;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Categories */
+.categories {
+    margin-top: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-item {
+    background: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.category-item:hover {
+    background: #0056b3;
+}
+
+/* Recent Posts */
+.recent-posts {
+    margin-top: 20px;
+}
+
+.recent-post-item {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.recent-post-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.recent-post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.blog-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-layout {
+        flex-direction: column;
+    }
+
+    .main-content, .sidebar {
+        min-width: 100%;
+    }
+
+    .sidebar {
+        max-width: 100%;
+    }
+}
